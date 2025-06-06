@@ -1,0 +1,55 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-56b249fba88fbcba.js",
+      "static/chunks/4bd1b696-843266b6bb2dc524.js",
+      "static/chunks/587-e38a4d1393a2cd99.js",
+      "static/chunks/main-app-93f615444b3e1bbb.js",
+      "static/chunks/app/_not-found/page-cb823adb5c07e584.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-56b249fba88fbcba.js",
+      "static/chunks/4bd1b696-843266b6bb2dc524.js",
+      "static/chunks/587-e38a4d1393a2cd99.js",
+      "static/chunks/main-app-93f615444b3e1bbb.js",
+      "static/css/96c339b90f4c5260.css",
+      "static/chunks/565-fd2456f055d3e839.js",
+      "static/chunks/app/layout-f6dc3b60811c16d3.js"
+    ],
+    "/api/blogs/[blog]/route": [
+      "static/chunks/webpack-56b249fba88fbcba.js",
+      "static/chunks/4bd1b696-843266b6bb2dc524.js",
+      "static/chunks/587-e38a4d1393a2cd99.js",
+      "static/chunks/main-app-93f615444b3e1bbb.js",
+      "static/chunks/app/api/blogs/[blog]/route-385ca72e2b9afe25.js"
+    ],
+    "/api/blogs/route": [
+      "static/chunks/webpack-56b249fba88fbcba.js",
+      "static/chunks/4bd1b696-843266b6bb2dc524.js",
+      "static/chunks/587-e38a4d1393a2cd99.js",
+      "static/chunks/main-app-93f615444b3e1bbb.js",
+      "static/chunks/app/api/blogs/route-e281e926ec8476bd.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-56b249fba88fbcba.js",
+      "static/chunks/4bd1b696-843266b6bb2dc524.js",
+      "static/chunks/587-e38a4d1393a2cd99.js",
+      "static/chunks/main-app-93f615444b3e1bbb.js",
+      "static/chunks/e58627ac-f4ce877e51569ba6.js",
+      "static/chunks/565-fd2456f055d3e839.js",
+      "static/chunks/653-8e7b76c78c5f1082.js",
+      "static/chunks/app/page-3cdcb4e72bc3d9f7.js"
+    ],
+    "/vitamins/[blog]/page": [
+      "static/chunks/webpack-56b249fba88fbcba.js",
+      "static/chunks/4bd1b696-843266b6bb2dc524.js",
+      "static/chunks/587-e38a4d1393a2cd99.js",
+      "static/chunks/main-app-93f615444b3e1bbb.js",
+      "static/chunks/e58627ac-f4ce877e51569ba6.js",
+      "static/chunks/565-fd2456f055d3e839.js",
+      "static/chunks/653-8e7b76c78c5f1082.js",
+      "static/chunks/804-6ba5a1ba364a68d5.js",
+      "static/chunks/app/vitamins/[blog]/page-06038a23cc0ff133.js"
+    ]
+  }
+}
