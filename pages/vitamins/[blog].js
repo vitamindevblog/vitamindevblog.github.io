@@ -10,10 +10,10 @@ import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
+import Head from "next/head";
 
 const DetailBlog = (props) => {
   const { data, content } = matter(props.content);
-  console.log("data", data);
 
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -33,6 +33,10 @@ const DetailBlog = (props) => {
 
   return (
     <>
+      <Head>
+        <title>{data.title}</title>
+        <meta name="Vitamindev" content={data.title} />
+      </Head>
       <motion.div
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
@@ -77,7 +81,7 @@ const DetailBlog = (props) => {
             {content}
           </ReactMarkdown>
 
-          {/* <Comment /> */}
+          <Comment />
         </div>
       </div>
     </>
