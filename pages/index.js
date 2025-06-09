@@ -1,30 +1,18 @@
 "use client";
-import { Geist, Geist_Mono } from "next/font/google";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import matter from "gray-matter";
 import Head from "next/head";
-import Loading from "@/components/Loading";
 import PostItem from "@/components/PostItem";
 import { SquareArrowLeft, SquareArrowRight } from "lucide-react";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 const limitItems = 10;
 export default function Home(props) {
   const router = useRouter();
 
   const [listPosts, setListPosts] = useState([]);
   const [backupListPosts, setBackupListPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [totalPage, setTotalPage] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -47,7 +35,6 @@ export default function Home(props) {
     }
 
     setTotalPage(Math.ceil(listItems?.length / limitItems));
-    setLoading(false);
   }, []);
 
   const changePage = (page) => {
@@ -67,7 +54,6 @@ export default function Home(props) {
         <meta name="Vitamindev Blog" content="Vitamindev Blog"></meta>
       </Head>
       <section className="flex flex-col justify-between">
-        <Loading loading={loading} />
         <div className="mb-auto main" data-aos="fade-up">
           <div className="text-xl font-bold border-b-2 max-w-max mb-5">
             Bài viết
