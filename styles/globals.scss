@@ -1,6 +1,6 @@
-@import "tailwindcss";
-@import "../styles/header.scss";
-@import "../styles/blog.scss";
+@use "tailwindcss";
+@use "../styles/header.scss";
+@use "../styles/blog.scss";
 
 html,
 body {

@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import fs from "fs";
+import path from "path";
 import matter from "gray-matter";
 import { motion, useScroll, useSpring } from "framer-motion";
 const Comment = dynamic(() => import("../../components/CommentFacebook"));
@@ -84,19 +86,26 @@ const DetailBlog = (props) => {
 
 export default DetailBlog;
 
-export const getServerSideProps = async (context) => {
-  const fs = require("fs");
+export async function getStaticPaths() {
+  const files = fs.readdirSync(path.join(process.cwd(), "content"));
+  const paths = files.map((filename) => ({
+    params: {
+      blog: filename.replace(".md", ""),
+    },
+  }));
+  return {
+    paths,
+    fallback: false, // false: 404 nếu không tồn tại trong build
+  };
+}
 
-  const { blog } = context.params;
-
-  const content = fs.readFileSync(
-    `${process.cwd()}/content/${blog}.md`,
-    "utf8"
-  );
-
+// Lấy nội dung từng bài viết
+export async function getStaticProps({ params }) {
+  const filePath = path.join(process.cwd(), "content", `${params.blog}.md`);
+  const content = fs.readFileSync(filePath, "utf8");
   return {
     props: {
       content,
     },
   };
-};
+}
