@@ -77,7 +77,27 @@ const DetailBlog = (props) => {
           />
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
-            rehypePlugins={[rehypeRaw]}>
+            rehypePlugins={[rehypeRaw]}
+            components={{
+              h1: ({ node, ...props }) => (
+                <h1 className="text-4xl my-6 font-bold" {...props} />
+              ),
+              h2: ({ node, ...props }) => (
+                <h1 className="text-3xl my-6 font-bold" {...props} />
+              ),
+              h3: ({ node, ...props }) => (
+                <h1 className="text-2xl my-6 font-bold" {...props} />
+              ),
+              h4: ({ node, ...props }) => (
+                <h1 className="text-xl my-6 font-bold" {...props} />
+              ),
+              h5: ({ node, ...props }) => (
+                <h1 className="text-lg my-6 font-bold" {...props} />
+              ),
+              h6: ({ node, ...props }) => (
+                <h1 className="text-base my-6 font-bold" {...props} />
+              ),
+            }}>
             {content}
           </ReactMarkdown>
 
