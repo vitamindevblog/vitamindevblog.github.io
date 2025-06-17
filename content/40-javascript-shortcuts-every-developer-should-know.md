@@ -4,7 +4,7 @@ title: 40 Shortcuts trong Javascrip mà các developer nên biết
 category: Javascript
 description: "This post highlights 40 essential JavaScript shortcuts for developers in 2025, categorized for easy learning."
 img: 40-short-cut.jpg
-date: 16/05/2023
+date: 17 June 2025
 author: thiennt
 ---
 

@@ -3,7 +3,7 @@ slug: ssr-vs-csr
 title: Server side rendering vs Client side rendering
 category: Web Browser
 description: Cơ chế hoạt động của Server side rendering vs Client side rendering
-date: 03/08/2023
+date: 3 Aug 2023
 img: ssr-vs-csr.jpeg
 author: thiennt
 ---

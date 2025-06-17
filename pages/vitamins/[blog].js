@@ -97,6 +97,12 @@ const DetailBlog = (props) => {
               h6: ({ node, ...props }) => (
                 <h1 className="text-base my-6 font-bold" {...props} />
               ),
+              ul: ({ node, ...props }) => (
+                <ul className="list-disc pl-10" {...props} />
+              ),
+              ol: ({ node, ...props }) => (
+                <ol className="list-decimal pl-10" {...props} />
+              ),
             }}>
             {content}
           </ReactMarkdown>

@@ -4,7 +4,7 @@ title: Con trỏ This trong javascript
 category: Javascript
 description: "Tìm hiểu và học cách sử dụng con trỏ this trong Javascript"
 img: con-tro-this-trong-javascript.jpg
-date: 12/05/2022
+date: 12 March 2023
 author: thiennt
 ---
 

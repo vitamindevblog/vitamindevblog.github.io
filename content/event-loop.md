@@ -4,7 +4,7 @@ title: Event Loop trong javascript
 category: Javascript
 description: "Nguyên tắc và cách hoạt động của Event Loop trong javascript"
 img: the-javascript-event-loop-explained-blog.jpg
-date: 16/05/2023
+date: 15 March 2023
 author: thiennt
 ---
 
