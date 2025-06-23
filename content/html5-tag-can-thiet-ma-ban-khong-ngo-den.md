@@ -8,7 +8,7 @@ date: 23 June 2025
 author: thiennt
 ---
 
-## Thẻ `<detail>` và `<sumary>`: Accordion tích hợp sẵn
+## 1. Thẻ `<detail>` và `<sumary>`: Accordion tích hợp sẵn
 
 Accordion (nội dung thu gọn/mở rộng) xuất hiện ở khắp nơi trên web — trang FAQ, chi tiết sản phẩm, bảng cài đặt ... Hầu hết lập trình viên sẽ tìm đến một giải pháp JavaScript, nhưng HTML5 lại có sẵn cặp thẻ này:
 
@@ -106,7 +106,7 @@ input.addEventListener('input', () => {
 
 Hạn chế chính của thẻ <datalist> là style - bạn không thể dễ dàng tùy chỉnh giao diện của các tùy chọn thả xuống. Nếu bạn cần tùy chỉnh cho các gợi ý, bạn vẫn cần giải pháp JavaScript.
 
-## 3.Thẻ `<metter>`: Hiển thị phép đo
+## 3. Thẻ `<metter>`: Hiển thị phép đo
 
 Khi hiển thị các giá trị trong phạm vi đã biết, hầu hết các nhà phát triển sử dụng div có màu nền. Nhưng HTML5 có một phần tử chuyên dụng cho việc này:
 

@@ -42,9 +42,7 @@ const DetailBlog = (props) => {
         style={{ scaleX: scrollYProgress }}
       />
       <div id="blog-post-container">
-        <div
-          className="prose main"
-          style={{ background: "rgb(250, 250, 250)" }}>
+        <div className="prose main">
           <h3>Share to social</h3>
           <div className="social-share">
             <Image
@@ -102,6 +100,13 @@ const DetailBlog = (props) => {
               ),
               ol: ({ node, ...props }) => (
                 <ol className="list-decimal pl-10" {...props} />
+              ),
+              pre: ({ node, inline, className, children, ...props }) => (
+                <pre
+                  className="bg-[#1f2937] p-4 my-4 rounded text-[#e5e7eb]"
+                  {...props}>
+                  {children}
+                </pre>
               ),
             }}>
             {content}
