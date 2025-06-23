@@ -243,4 +243,4 @@ figcaption {
 }
 ```
 
-## <i>Các thành phần này làm giảm sự phụ thuộc vào JavaScript, cải thiện khả năng truy cập và làm cho HTML của bạn có ý nghĩa và ngữ nghĩa hơn.</i>
+### Tổng kết: Các thành phần này làm giảm sự phụ thuộc vào JavaScript, cải thiện khả năng truy cập và làm cho HTML của bạn có ý nghĩa và ngữ nghĩa hơn.
