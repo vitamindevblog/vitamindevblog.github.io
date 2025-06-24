@@ -11,6 +11,8 @@ const PostItem = ({ listItems }) => {
         return "bg-gradient-to-r from-orange-200 to-orange-400 text-orange-900 hover:from-orange-300 hover:to-orange-500 shadow-sm hover:rotate-1 font-semibold";
       case "CSS":
         return "bg-gradient-to-r from-blue-200 to-blue-400 text-blue-900 hover:from-blue-300 hover:to-blue-500 shadow-sm hover:rotate-1 font-semibold";
+      case "Reactjs":
+        return "bg-gradient-to-r from-[#3a8ef6] to-[#9f7aea] text-white hover:from-blue-300 hover:to-blue-500 shadow-sm hover:rotate-1 font-semibold";
       case "Javascript":
         return "bg-gradient-to-r from-yellow-200 to-yellow-400 text-yellow-900 hover:from-yellow-300 hover:to-yellow-500 shadow-sm hover:rotate-1 font-semibold";
       default:
