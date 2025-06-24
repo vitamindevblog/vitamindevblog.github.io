@@ -108,6 +108,32 @@ const DetailBlog = (props) => {
                   {children}
                 </pre>
               ),
+              table: ({ node, ...props }) => (
+                <table
+                  style={{
+                    border: "1px solid #ccc",
+                    width: "100%",
+                    borderCollapse: "collapse",
+                  }}
+                  {...props}
+                />
+              ),
+              th: ({ node, ...props }) => (
+                <th
+                  style={{
+                    border: "1px solid #ccc",
+                    padding: "8px",
+                    background: "#f9f9f9",
+                  }}
+                  {...props}
+                />
+              ),
+              td: ({ node, ...props }) => (
+                <td
+                  style={{ border: "1px solid #ccc", padding: "8px" }}
+                  {...props}
+                />
+              ),
             }}>
             {content}
           </ReactMarkdown>
