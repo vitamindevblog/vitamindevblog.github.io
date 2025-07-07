@@ -1,7 +1,7 @@
 ---
 slug: frontend-development-how-the-web-works
 title: FrontEnd Development là gì? Cách một website hoạt động?
-category: Fronten Development
+category: Frontend Development
 description: "Giải mã front-end development và cách website hoạt động"
 img: front-end.jpg
 date: 17 June 2025

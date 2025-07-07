@@ -33,7 +33,7 @@ const PostItem = ({ listItems }) => {
             onClick={() => router.push(`/vitamins/${blog?.slug}`)}>
             <div>
               <div className="blogTitle">{blog?.title}</div>
-              <div className="font-semibold text-gray-900">
+              <div className="line-clamp-2 font-semibold text-gray-900 max-w-[40vw] text-justify">
                 {blog?.description}
               </div>
               <div className="flex items-center gap-2 max-md:mb-2 text-sm text-gray-400">
