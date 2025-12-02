@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import matter from "gray-matter";
 import Head from "next/head";
 import PostItem from "@/components/PostItem";
@@ -10,22 +10,25 @@ import Footer from "@/components/Footer";
 const limitItems = 10;
 export default function Home(props) {
   const router = useRouter();
-
+  const searchParams = useSearchParams();
   const [listPosts, setListPosts] = useState([]);
   const [backupListPosts, setBackupListPosts] = useState([]);
   const [totalPage, setTotalPage] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
-    const asPathName = router?.asPath?.split("?");
+    const pageOnUrl = searchParams.get("page");
+
     const realData = props?.data?.map((blog) => matter(blog));
     let listItems = realData?.map((listItem) => listItem.data) || [];
     listItems = listItems?.sort((a, b) => {
       return new Date(b.date).getTime() - new Date(a.date).getTime();
     });
     setBackupListPosts(listItems);
-    if (asPathName?.length > 1) {
-      let pageNumber = Number(asPathName?.[1]?.split("=")[1]);
+
+    if (pageOnUrl) {
+      let pageNumber = Number(pageOnUrl);
+
       setCurrentPage(pageNumber);
       setListPosts(
         listItems.slice((pageNumber - 1) * limitItems, pageNumber * limitItems)
